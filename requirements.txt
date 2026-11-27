@@ -1,0 +1,10 @@
+# Core PySpark engine (3.5.x aligns with hadoop-aws:3.3.4)
+pyspark>=3.5.0,<4.0.0
+
+# Load environment variables from a local .env file
+python-dotenv>=1.0.0,<2.0.0
+
+# Note: The AWS S3A (org.apache.hadoop:hadoop-aws:3.3.4) and PostgreSQL JDBC
+# (org.postgresql:postgresql:42.7.3) connectors are JVM JARs downloaded
+# automatically by Spark at runtime and do not need to be installed via pip.
+# Ensure Java (JDK 8, 11, or 17) is installed in your environment.
